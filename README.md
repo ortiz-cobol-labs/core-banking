@@ -58,7 +58,7 @@ sudo apt install open-cobol build-essential
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/ortiz-cobol-labs/core-banking.git](https://github.com/ortiz-cobol-labs/core-banking.git)
+git clone https://github.com/ortiz-cobol-labs/core-banking.git
 cd core-banking
 
 ```
