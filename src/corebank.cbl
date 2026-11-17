@@ -1,0 +1,24 @@
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID. COREBANK.
+        AUTHOR. ORTIZ DAVID.
+        DATE-WRITTEN. 2026.
+
+        ENVIRONMENT DIVISION.
+        INPUT-OUTPUT SECTION.
+        FILE-CONTROL.
+            SELECT CUSTOMER-FILE ASSIGN TO "data/customer.dat"
+                ORGANIZATION AS INDEXED
+                ACCESS MODE IS DYNAMIC
+                RECORD KEY IS CUS-ID
+                FILE STATUS IS WS-CUS-STATUS.
+
+           SELECT ACCOUNT-FILE ASSIGN TO "data/account.dat"
+               ORGANIZATION IS INDEXED
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS ACC-NUMBER
+               FILE STATUS IS WS-ACC-STATUS.
+
+           SELECT TRANSACTION-FILE ASSIGN TO "data/transction.dat"
+               ORGANIZATION IS SEQUENTIAL
+               ACCESS MODE IS SEQUENTIAL
+               FILE STATUS IS WS-TRX-STATUS.
